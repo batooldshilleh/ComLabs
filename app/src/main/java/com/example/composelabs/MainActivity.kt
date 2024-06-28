@@ -1,12 +1,10 @@
 package com.example.composelabs
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.composelabs.basicApp.FirstComposeApp
 import com.example.composelabs.databinding.ActivityMainBinding
+import com.example.composelabs.state.ComposeStateActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -20,6 +18,9 @@ class MainActivity : AppCompatActivity() {
     private fun setupListener() {
         binding.btnBasicApp.setOnClickListener {
             startActivity(FirstComposeApp.newIntent(this))
+        }
+        binding.btnStateApp.setOnClickListener {
+            startActivity(ComposeStateActivity.newIntent(this))
         }
     }
 }
