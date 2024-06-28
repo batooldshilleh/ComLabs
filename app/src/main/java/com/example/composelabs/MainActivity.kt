@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.composelabs.basicApp.FirstComposeApp
 import com.example.composelabs.databinding.ActivityMainBinding
+import com.example.composelabs.realApp.RealWorldDesign
 import com.example.composelabs.state.ComposeStateActivity
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnStateApp.setOnClickListener {
             startActivity(ComposeStateActivity.newIntent(this))
+        }
+        binding.btnRealApp.setOnClickListener {
+            startActivity(RealWorldDesign.newIntent(this))
         }
     }
 }

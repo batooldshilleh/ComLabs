@@ -13,6 +13,11 @@
         android:theme="@style/Theme.ComposeLabs"
         tools:targetApi="31">
         <activity
+            android:name=".realApp.RealWorldDesign"
+            android:exported="false"
+            android:label="@string/title_activity_real_world_design"
+            android:theme="@style/Theme.ComposeLabs" />
+        <activity
             android:name=".state.ComposeStateActivity"
             android:exported="false"
             android:label="@string/title_activity_compose_state"
