@@ -8,14 +8,22 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnBasicApp"
-        android:layout_width="0dp"
+        android:id="@+id/btnStateApp"
+        android:layout_width="392dp"
         android:layout_height="56dp"
+        android:text="@string/first_app"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="20dp"
-        android:text="@string/first_app"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnBasicApp" />
 
+    <Button
+        android:id="@+id/btnBasicApp"
+        android:layout_width="371dp"
+        android:layout_height="56dp"
+        android:text="@string/second_app"
+        app:layout_constraintBottom_toTopOf="@+id/btnStateApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
