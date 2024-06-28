@@ -5,7 +5,7 @@
 
 This project is an application for Google's private laboratories.
 
-## Screenshots-->
+## Screenshots
 
 
 ### Main Screen
